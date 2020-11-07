@@ -1,34 +1,9 @@
-const images = {
-    path: "./assets/images/",
-    names: [
-        "1.jpg","2.jpg","3.jpg","4.png","5.jpg","6.jpg","7.jpeg","8.jpg","9.jpg","10.jpg","11.jpg","1.jpg","2.jpg","3.jpg","4.png","5.jpg","6.jpg","7.jpeg","8.jpg","9.jpg","10.jpg","11.jpg"
-    ]
-}
+
 
 var paintImages = (() => {
     let counter = 1;
     let gallery = document.querySelector(".gallery");
     for(index in images.names) {
-
-        // When first of 3 create and insert a div to group images
-        if (index % 3 == 0)  {
-            groupDom = document.createElement('div');
-            groupDom.classList.add('group')
-            gallery.append(groupDom);
-        }
-
-        // Inserting 3 images in each group
-        let currentGroupIndex = parseInt(index/3)
-        let currentGroup = document.querySelectorAll('.group')[currentGroupIndex]
-        if (currentGroup) {
-            currentImage = document.createElement('div')
-            currentImage.classList.add('image');
-            currentImage.classList.add(counter == 1 ? 'center' : counter == 2 ? "left" : "right");
-            currentImage.style.cssText += "background-image: url('" + images.path + images.names[index] + "');"
-            currentGroup.append(currentImage)
-        }
-        if (counter == 3) counter = 0
-        counter++
     }
 
     // Placing groups in its respective position
