@@ -1,0 +1,49 @@
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    height: calc(100vh - 154px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.left_menu {
+    height: 100%;
+    flex-grow: 1;
+    border-right: 1px solid #000;
+}
+
+.gallery {
+    flex-grow: 9;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.gallery .scroll_item {
+    height: 200vh;
+}
+
+.image {
+    width: 350px;
+    height: 275px;
+    position: absolute;
+    display: none;
+}
+
+.image.visible {
+    display: block
+}
+
+footer {
+    height: 50px;
+}
