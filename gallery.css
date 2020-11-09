@@ -29,19 +29,14 @@
     overflow-y: auto;
 }
 
-.gallery .scroll_item {
-    height: 200vh;
-}
-
 .image {
-    width: 350px;
-    height: 275px;
+    width: 750px;
     position: absolute;
     display: none;
 }
 
 .image.visible {
-    display: block
+    display: block;
 }
 
 footer {

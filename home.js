@@ -69,24 +69,29 @@ var reposition = function(element) {
 
     let modifier_x = 0;
     let modifier_z = 0;
+    let modifier_rotation = 0;
     let time_line = new TimelineMax();
 
     if (element.classList.contains('left')) {
         modifier_x = 1;
         modifier_z = 1;
+        modifier_rotation = -1;
     } else if (element.classList.contains('right')) {
         modifier_x = -1;
         modifier_z = 1;
+        modifier_rotation = 0;
     } else {
         modifier_x = 0;
         modifier_z = 0;
+        modifier_rotation = 1;
     }
 
     time_line  .to('.scene', {
             x: 450 * modifier_x
         })
         .to('.scene', {
-            z: 800 * modifier_z
+            z: 800 * modifier_z,
+            rotateY: 20 * modifier_rotation
         })
 }
 // END ↑ ↑ ↑
