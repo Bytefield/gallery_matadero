@@ -1,140 +1,141 @@
 const images = [
     {
         name: "digital_mariachi.png",
-        text: "some text here",
-        title: "some title here",
+        text: "digital_mariachi",
+        title: "Title 1",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "digital_rediseño.png",
-        text: "some text here",
-        title: "some title here",
+        text: "digital_rediseño",
+        title: "Title 1",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "espacios_mimm.png",
-        text: "some text here",
-        title: "some title here",
+        text: "espacios_mimm",
+        title: "Title 1",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "espacios_mo.png",
-        text: "some text here",
-        title: "some title here",
+        text: "espacios_mo",
+        title: "Title 2",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "grafico_identidadvisual.png",
-        text: "some text here",
+        text: "grafico_identidadvisual",
+        title: "Title 2",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "grafico_iñor.png",
-        text: "some text here",
-        title: "some title here",
+        text: "grafico_iñor",
+        title: "Title 2",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "grafico_señaletica.png",
-        text: "some text here",
-        title: "some title here",
+        text: "grafico_señaletica",
+        title: "Title 3",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "grafico_yasuni.png",
-        text: "some text here",
-        title: "some title here",
+        text: "grafico_yasuni",
+        title: "Title 3",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "integral_concentrico.png",
-        text: "some text here",
-        title: "some title here",
+        text: "integral_concentrico",
+        title: "Title 3",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "integral_manufactura.png",
-        text: "some text here",
-        title: "some title here",
+        text: "integral_manufactura",
+        title: "Title 4",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "integral_sonidostextiles.png",
-        text: "some text here",
-        title: "some title here",
+        text: "integral_sonidostextiles",
+        title: "Title 4",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "integral_usule.png",
-        text: "some text here",
-        title: "some title here",
+        text: "integral_usule",
+        title: "Title 4",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "moda_arekuna.png",
-        text: "some text here",
-        title: "some title here",
+        text: "moda_arekuna",
+        title: "Title 5",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "moda_coleccion.png",
-        text: "some text here",
-        title: "some title here",
+        text: "moda_coleccion",
+        title: "Title 5",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "moda_escapular.png",
-        text: "some text here",
-        title: "some title here",
+        text: "moda_escapular",
+        title: "Title 5",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "moda_puna.png",
-        text: "some text here",
-        title: "some title here",
+        text: "moda_puna",
+        title: "Title 6",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "producto_aplicador.png",
-        text: "some text here",
-        title: "some title here",
+        text: "producto_aplicador",
+        title: "Title 6",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "producto_frontera.png",
-        text: "some text here",
-        title: "some title here",
+        text: "producto_frontera",
+        title: "Title 6",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "producto_kit.png",
-        text: "some text here",
-        title: "some title here",
+        text: "producto_kit",
+        title: "Title 7",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     },
     {
         name: "producto_natura.png",
-        text: "some text here",
-        title: "some title here",
+        text: "producto_natura",
+        title: "Title 7",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: []
     }
@@ -181,6 +182,7 @@ images.map(function(image, index) {
 
 
     if (index < images_to_display) new_image.classList.add('visible');
+    if (index == 0) image_container.classList.add('text_visible');
 
     gallery_element.append(image_container);
     image_elements_array.push(new_image);
@@ -201,20 +203,36 @@ var position_elements = function(elements_array) {
             y: move_y,
             z: move_z
         });
-
-        element.setAttribute('data-x', move_x);
-        element.setAttribute('data-y', move_y);
-        element.setAttribute('data-z', move_z);
     });
 }
 
 // initial positioning
 position_elements(image_elements_array);
 
+// Get elements for image scrolling
+const get_elements = function() {
+    let first_in_visible = gallery_element.querySelectorAll('.visible')[0];
+    let last_in_visible = gallery_element.querySelectorAll('.visible')[5]
+    let last_in_visible_index = image_elements_array.indexOf(last_in_visible);
+    let item_one_plus = (last_in_visible_index < image_elements_array.length) ? image_elements_array[last_in_visible_index + 1] : image_elements_array[image_elements_array.length - 1];
+    let first_in_visible_index = image_elements_array.indexOf(first_in_visible);
+    let item_one_minus = (first_in_visible_index > 0) ? image_elements_array[first_in_visible_index - 1] : image_elements_array[0];
+
+    let elements = {
+        first: first_in_visible,
+        one_plus: item_one_plus,
+        last: last_in_visible,
+        one_minus: item_one_minus
+    }
+
+    return elements;
+}
+
 let counter = 0;
 var scroll_value = 0;
 var last_scroll = 0;
 var forward = true;
+var visibles_array = [];
 let time_line = new TimelineMax();
 gallery_element.addEventListener('scroll', () => {
 
@@ -224,48 +242,53 @@ gallery_element.addEventListener('scroll', () => {
     if(last_scroll > gallery_element.scrollTop) forward = false;
     else forward = true;
 
-    let first_in_visible = gallery_element.querySelectorAll('.visible')[0];
-    let last_in_visible = gallery_element.querySelectorAll('.visible')[5]
-    let last_in_visible_index = image_elements_array.indexOf(last_in_visible);
-    let item_one_plus = (last_in_visible_index < image_elements_array.length) ? image_elements_array[last_in_visible_index + 1] : image_elements_array[image_elements_array.length - 1];
-    let first_in_visible_index = image_elements_array.indexOf(first_in_visible);
-    let item_one_minus = (first_in_visible_index > 0) ? image_elements_array[first_in_visible_index - 1] : image_elements_array[0];
-
     if((scroll_value >= scrolling_coeficient) && forward && (counter <= image_elements_array.length)) {
 
         counter++;
-        console.log('click', counter, scroll_value)
 
-        time_line.to(first_in_visible, 0.75, {
+        let elements = get_elements();
+
+        time_line.to(elements.first, 0.75, {
             // rotateY: 45,
             autoAlpha: 0,
             onComplete: function() {
-                item_one_plus.classList.add('visible');
-                first_in_visible.classList.remove('visible');
 
-                // reposition all images
-                let visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                visibles_array[0].parentElement.classList.remove('text_visible')
+                visibles_array[1].parentElement.classList.add('text_visible')
+
+                elements.one_plus.classList.add('visible');
+                elements.first.classList.remove('visible');
+
+                // Reposition all visible images
+                visibles_array = [...gallery_element.querySelectorAll('.visible')];
                 position_elements(visibles_array);
             }
         });
     } else if ((scroll_value <= scrolling_coeficient) && !forward && (counter >= 0)){
 
         counter--;
-        console.log('click', counter, scroll_value)
 
-        time_line.to(last_in_visible, 0.75, {
+        let elements = get_elements();
+
+        time_line.to(elements.last, 0.75, {
             rotateY: 0,
             autoAlpha: 1,
             onComplete: function() {
-                time_line.to(item_one_minus, 0.25, {
+                time_line.to(elements.one_minus, 0.25, {
                     rotateY: 0,
                     autoAlpha: 1,
                     onComplete: function() {
-                        item_one_minus.classList.add('visible');
-                        last_in_visible.classList.remove('visible');
+
+                        visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                        visibles_array[0].parentElement.classList.remove('text_visible');
+
+                        elements.one_minus.classList.add('visible');
+                        elements.last.classList.remove('visible');
 
                         // reposition all images
-                        let visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                        visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                        visibles_array[0].parentElement.classList.add('text_visible')
                         position_elements(visibles_array);
                     }
                 });

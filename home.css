@@ -75,6 +75,7 @@
 
 .clicked .close_button {
     display: block;
+    cursor: pointer;
 }
 
 /*
