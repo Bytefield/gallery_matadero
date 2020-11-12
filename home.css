@@ -48,7 +48,12 @@
 
 .text {
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
+    line-height: 0.95;
+}
+
+.four .text {
+    bottom: -35px;
 }
 
 .left .text {

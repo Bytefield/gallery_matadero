@@ -1,0 +1,49 @@
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    height: calc(100vh - 154px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.left,
+.right {
+    width: 50%;
+    height:100%;
+}
+
+.left {
+    transform-style: preserve-3d;
+    transform: rotateY(25deg) translateX(50px);
+}
+
+.left .bottom {
+    transform: translateZ(146px) translateY(50px);
+}
+
+.top,
+.bottom {
+    height: 50%;
+    width: 50%;
+    display:flex;
+}
+
+img {
+    width:100%;
+    margin: 0px 10px;
+}
+
+footer {
+    height: 50px;
+}

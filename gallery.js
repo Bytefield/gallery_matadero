@@ -140,11 +140,13 @@ const images = [
         tags: []
     }
 ];
+// Remember to add same number of repeated images at end of array for filling purpouses
+
 const images_path = "./assets/images/gallery/categorias/desktop/";
 var image_elements_array = [];
 
-const images_to_display = 7
-const positioning_coeficient = 50;
+const images_to_display = 8
+const positioning_coeficient = 25;
 const scrolling_coeficient = 1000 ;
 const scrolling_ratio = 2.4;
 const number_total_images = images.length;
@@ -228,78 +230,75 @@ const get_elements = function() {
     return elements;
 }
 
-let counter = 0;
-var scroll_value = 0;
-var last_scroll = 0;
-var forward = true;
+let scroll_counter = 0;
+var ticker = 0;
+var last_ticker = 0;
 var visibles_array = [];
 let time_line = new TimelineMax();
-gallery_element.addEventListener('scroll', () => {
 
-    scroll_value = gallery_element.scrollTop - (counter * scrolling_ratio_coeficient);
-    // let forward = last_scroll < gallery_element.scrollTop;
+$('.gallery').mousewheel(function(event, delta) {
 
-    if(last_scroll > gallery_element.scrollTop) forward = false;
-    else forward = true;
+    if (delta < 0) scroll_counter++;
+    else scroll_counter--;
 
-    if((scroll_value >= scrolling_coeficient) && forward && (counter <= image_elements_array.length)) {
+    if ((scroll_counter % 150 == 0) && (delta < 0)) ticker++;
+    else if ((scroll_counter % 150 == 0) && (delta > 0)) ticker--;
 
-        counter++;
+    if(last_ticker != ticker) {
+        if ((delta < 0) && (ticker <= image_elements_array.length)) {
 
-        let elements = get_elements();
+            console.log(ticker)
 
-        time_line.to(elements.first, 0.75, {
-            // rotateY: 45,
-            autoAlpha: 0,
-            onComplete: function() {
+            let elements = get_elements();
 
-                visibles_array = [...gallery_element.querySelectorAll('.visible')];
-                visibles_array[0].parentElement.classList.remove('text_visible')
-                visibles_array[1].parentElement.classList.add('text_visible')
+            time_line.to(elements.first, 0.75, {
+                // rotateY: 45,
+                autoAlpha: 0,
+                onComplete: function() {
 
-                elements.one_plus.classList.add('visible');
-                elements.first.classList.remove('visible');
+                    visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                    visibles_array[0].parentElement.classList.remove('text_visible')
+                    visibles_array[1].parentElement.classList.add('text_visible')
 
-                // Reposition all visible images
-                visibles_array = [...gallery_element.querySelectorAll('.visible')];
-                position_elements(visibles_array);
-            }
-        });
-    } else if ((scroll_value <= scrolling_coeficient) && !forward && (counter >= 0)){
+                    elements.one_plus.classList.add('visible');
+                    elements.first.classList.remove('visible');
 
-        counter--;
+                    // Reposition all visible images
+                    visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                    position_elements(visibles_array);
+                }
+            });
+        } else if ((delta > 0) && (ticker >= 0)) {
 
-        let elements = get_elements();
+            let elements = get_elements();
 
-        time_line.to(elements.last, 0.75, {
-            rotateY: 0,
-            autoAlpha: 1,
-            onComplete: function() {
-                time_line.to(elements.one_minus, 0.25, {
-                    rotateY: 0,
-                    autoAlpha: 1,
-                    onComplete: function() {
+            time_line.to(elements.last, 0.75, {
+                rotateY: 0,
+                autoAlpha: 1,
+                onComplete: function() {
+                    time_line.to(elements.one_minus, 0.25, {
+                        rotateY: 0,
+                        autoAlpha: 1,
+                        onComplete: function() {
 
-                        visibles_array = [...gallery_element.querySelectorAll('.visible')];
-                        visibles_array[0].parentElement.classList.remove('text_visible');
+                            visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                            visibles_array[0].parentElement.classList.remove('text_visible');
 
-                        elements.one_minus.classList.add('visible');
-                        elements.last.classList.remove('visible');
+                            elements.one_minus.classList.add('visible');
+                            elements.last.classList.remove('visible');
 
-                        // reposition all images
-                        visibles_array = [...gallery_element.querySelectorAll('.visible')];
-                        visibles_array[0].parentElement.classList.add('text_visible')
-                        position_elements(visibles_array);
-                    }
-                });
-            }
-        });
+                            // reposition all images
+                            visibles_array = [...gallery_element.querySelectorAll('.visible')];
+                            visibles_array[0].parentElement.classList.add('text_visible')
+                            position_elements(visibles_array);
+                        }
+                    });
+                }
+            });
+        }
     }
 
-        last_scroll = gallery_element.scrollTop;
-
-
-        // move images
+    last_ticker = ticker
 });
 
 // identify first and 7+1 in row

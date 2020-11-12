@@ -40,19 +40,19 @@ gsap.to(three, 0.1, {
 
 gsap.to(four, 0.1, {
     x: -100,
-    z: 0,
+    z: -100,
     rotateY: 25
 })
 
 gsap.to(five, 0.1, {
     x: 150,
-    z: 200,
+    z: 100,
     rotateY: 0
 })
 
 gsap.to(six, 0.1, {
     x: 500,
-    z: 0,
+    z: -100,
     rotateY: -25
 })
 
@@ -168,7 +168,7 @@ var reposition = function(element) {
     let time_line = new TimelineMax();
 
     if (element.classList.contains('left')) {
-        modifier_x = 1;
+        modifier_x = 1.25;
         modifier_z = 1;
         modifier_rotation = -1;
 

@@ -10,9 +10,7 @@
 .content {
     display: flex;
     position: relative;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-    height: calc(100vh - 154px);
+    height: 100vh;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
