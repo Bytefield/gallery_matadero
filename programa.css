@@ -1,18 +1,11 @@
 ::-webkit-scrollbar{width:2px;height:2px;}
 ::-webkit-scrollbar-button{width:2px;height:2px;}
 
-.centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .content {
     display: flex;
     position: relative;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-    height: calc(100vh - 154px);
+    height: 100vh;
+    width: 100vw;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -25,18 +18,45 @@
 
 .left {
     transform-style: preserve-3d;
-    transform: rotateY(25deg) translateX(50px);
+    transform: rotateY(35deg) translateX(55px) translateZ(-10px) translateY(75px);
+}
+
+.left .top,
+.left .bottom {
+    width: 60%;
+    display: flex;
+}
+
+.left .top {
+
+}
+
+.left .top img:last-of-type {
+    transform: translateY(30px) translateX(20px);
 }
 
 .left .bottom {
-    transform: translateZ(146px) translateY(50px);
+    transform: translateZ(145px) translateY(-15px) translateX(110px);
+    width: 45%;
 }
 
-.top,
-.bottom {
-    height: 50%;
-    width: 50%;
-    display:flex;
+.right {
+    transform: rotateY(-45deg) translateX(160px) translateY(90px);
+    transform-style: preserve-3d;
+}
+
+.right .top,
+.right .bottom {
+    width: 60%;
+    display: flex;
+}
+
+.right .top {
+    transform: translateZ(-25px);
+}
+
+.right .bottom {
+    transform: translateX(-120px) translateY(-25px) translateZ(25px);
 }
 
 img {

@@ -19,3 +19,9 @@ img.logo {
     padding: 15px;
     height: 100px;
 }
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
