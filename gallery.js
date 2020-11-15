@@ -454,10 +454,24 @@ images.map(function(image, index) {
 
 }, false);
 
+// Initializing images array
 image_elements_array = [...gallery_element.querySelectorAll('.image_container')];
+
+// Positioning image container relative to bottom
+const window_height = window.innerHeight;
+const percent_height = window_height / 100;
+const image_alignment_bottom = scrolling_height -(window_height - (5 * percent_height));
+
+image_elements_array.map(function(element, index) {
+    element.style.bottom = image_alignment_bottom + "px";
+});
 
 // function to position visible elements
 var position_elements = function(counter) {
+
+    // variables
+    let last_image_title = "";
+
     image_elements_array.map(function(element, index) {
 
         let move_coeficient = positioning_coeficient * index;
@@ -477,28 +491,41 @@ var position_elements = function(counter) {
             });
         }
 
+        // hide / show first element
         if (index < counter)  {
             element.classList.add('hide');
         }  else {
             element.classList.remove('hide');
         }
-        console.log(element);
-        element.addEventListener('click', function() {
-            console.log(this);
-        });
+
+        // hide / show repeated title image
+        let image_title_element = element.querySelector('.title_image img');
+        let image_title = image_title_element.getAttribute('alt');
+        if (image_title == last_image_title) image_title_element.classList.add('hide');
+
+        // When element first in view -> show
+        let element_index = image_elements_array.indexOf(element);
+        if (element_index == counter) image_title_element.classList.remove('hide');
+
+        // Storing last image title for later comparison
+        last_image_title = image_title;
     });
 }
 
 // initial positioning
 position_elements(0);
 
-// Initializing variables to be used for scrolling
+//
+// SCROLLING
+//
+
+// Variables
 let scroll_counter = 0;
 var ticker = 0;
 var last_ticker = 0;
 var visibles_array = [];
 
-// Scrolling function
+// Function
 $('.gallery').mousewheel(function(event, delta) {
 
     if (delta < 0) scroll_counter++;
@@ -514,8 +541,3 @@ $('.gallery').mousewheel(function(event, delta) {
 
     last_ticker = ticker
 });
-
-
-
-// identify first and 7+1 in row
-// a && a+7

@@ -8,9 +8,9 @@
 
 .image_container {
     display: flex;
-    width: 75vw;
+    width: 90vmin;
+    margin-left: 5vmin;
     position: fixed;
-    top: 50vh;
     opacity: 1;
     transition: opacity 1s ease;
     -webkit-backface-visibility: hidden;
@@ -22,6 +22,8 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .main_image {
