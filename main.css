@@ -12,7 +12,6 @@ html, body {
 body {
     font-family: sans-serif;
     background-color: #fff;
-    perspective: 2500px;
 }
 
 img.logo {

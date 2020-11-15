@@ -13,6 +13,7 @@
     top: 50vh;
     opacity: 1;
     transition: opacity 1s ease;
+    -webkit-backface-visibility: hidden;
 }
 
 .title_image {

@@ -1,3 +1,7 @@
+body {
+    perspective: 2500px;
+}
+
 .wrapper {
     height: 100vh;
     display: flex;
