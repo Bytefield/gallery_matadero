@@ -1,13 +1,14 @@
-::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;}
-
 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 100vw;
     height: 100vh;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
 }
 
 .left,
@@ -16,12 +17,15 @@
 }
 
 .left {
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .left .top,
 .left .bottom {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -30,13 +34,16 @@
 }
 
 .right {
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .image_container {
     width:100%;
     margin: 0px 10px;
     opacity: 1;
+    -webkit-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
     cursor: pointer;
     position: relative;
@@ -50,11 +57,15 @@
     cursor: pointer;
     z-index: 1000;
     opacity: 1;
+    -webkit-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
 
 .close.hidden {
     opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
 
@@ -68,6 +79,8 @@ img {
 
 .hidden {
     opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
 

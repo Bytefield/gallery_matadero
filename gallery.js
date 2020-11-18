@@ -5,7 +5,8 @@ const images = [
         title: "digital",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: ""
     },
     {
         name: "digital_telepresencia",
@@ -440,11 +441,12 @@ images.map(function(image, index) {
 
     let image_path = "./assets/images/gallery/optimized/" + image.name + ".jpg";
     let title_image_src = image.title_path + image.title + ".svg"
+    let url = image.url || "#"
 
     let image_container_DOM =
         "<div class='image_container'>" +
             "<div class='title_image'>" +
-                "<img src='" + title_image_src + "' alt='" + image.title + "' class='image_title' />" +
+                "<img src='" + title_image_src + "' alt='" + image.title + "' class='image_title' data-url='" + url + "'/>" +
             "</div>" +
             "<a href='#'><img src='" + image_path + "' alt='" + image.name + "' class='main_image' /></a>" +
             "<p class='image_text'>" + image.text + "</p>" +
@@ -464,6 +466,14 @@ const image_alignment_bottom = scrolling_height -(window_height - (5 * percent_h
 
 image_elements_array.map(function(element, index) {
     element.style.bottom = image_alignment_bottom + "px";
+    let img = element.querySelector('img');
+    img.addEventListener('click', function() {
+        let url = this.getAttribute('data-url') || '#';
+        let link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('target', "_parent");
+        link.click();
+    });
 });
 
 // // Creating and positioning scrolling dots

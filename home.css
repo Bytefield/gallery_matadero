@@ -1,28 +1,39 @@
 body {
-    perspective: 2500px;
+    -webkit-perspective: 2500px;
+            perspective: 2500px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .wrapper {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .scene {
     position: absolute;
     left: 0;
-    top: 20vh;
+    top: 10vh;
     width: 100vw;
     height: 20vh;
     margin: 0;
-    perspective: 2500px;
-    transform-style: preserve-3d;
+    -webkit-perspective: 2500px;
+            perspective: 2500px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .group {
     position: absolute;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .group > div {
@@ -30,9 +41,19 @@ body {
 }
 
 .image_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.image_container.hidden {
+    opacity: 0;
 }
 
 .group img {
@@ -82,32 +103,4 @@ body {
 .clicked .close_button {
     display: block;
     cursor: pointer;
-}
-
-/*
-    Repositioning everything so image fits screen
-    on image click when active
-*/
-.scene.normal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-}
-
-.scene.normal > .group {
-    left: 0;
-    top: 0;
-    transition: all 0.5s ease;
-}
-
-.normal {
-    transform: none !important;
-    transition: all 0.5s ease;
-}
-
-.normal > img {
-    width: 100vw;
-    height: 100vh;
-    transition: all 0.5s ease;
 }

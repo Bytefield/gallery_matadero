@@ -162,7 +162,11 @@ images_array.map(function(element) {
 
             toggle_class(close_button, 'hidden');
         } else {
-            window.location.href = event.target.getAttribute('data-url') || "#";
+            let url = event.target.getAttribute('data-url') || '#';
+            let link = document.createElement('a');
+            link.setAttribute('href', url);
+            link.setAttribute('target', "_parent");
+            link.click();
         }
     });
 });
