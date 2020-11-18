@@ -1,107 +1,160 @@
 // Globals
-const coeficient_rotation_y = 30;
-
-const scene = document.querySelector('.scene');
-const groups_array = [...document.querySelectorAll('.group')];
-const left_group = document.querySelector('.left');
-const center_group = document.querySelector('.center');
-const image_container = [...document.querySelectorAll('.image_container')];
-const one = document.querySelector('.one');
-const two = document.querySelector('.two');
-const three = document.querySelector('.three');
-const four = document.querySelector('.four');
-const five = document.querySelector('.five');
-const six = document.querySelector('.six');
-const images_elements_array = [...document.querySelectorAll('img')];
-
-
 const window_width = window.innerWidth;
 const window_center_x = window.innerWidth / 2;
 const window_height = window.innerHeight;
 const window_center_y = window.innerHeight / 2;
 
-gsap.to(one, 0.1, {
-    x: -400,
-    z: -900,
-    rotateY: 25
-})
+const coeficient_rotation_y = 30;
 
-gsap.to(two, 0.1, {
-    x: -200,
-    z: -1200,
-    rotateY: 25
-})
+const scene = document.querySelector('.scene');
+const groups_array = [...document.querySelectorAll('.group')];
+const image_container = [...document.querySelectorAll('.image_container')];
 
-gsap.to(three, 0.1, {
-    x: 0,
-    z: -1500,
-    rotateY: 0
-})
-
-gsap.to(four, 0.1, {
-    x: -100,
-    z: -100,
-    rotateY: 25
-})
-
-gsap.to(five, 0.1, {
-    x: 150,
-    z: 100,
-    rotateY: 0
-})
-
-gsap.to(six, 0.1, {
-    x: 500,
-    z: -100,
-    rotateY: -25
-})
-
-gsap.to(left_group, 0.1, {
-    left: 0
-})
-
-gsap.to(center_group, 0.1, {
-    left: "40%"
-})
-
-// Gallery rotation function
-var rotate_gallery = function(event) {
-    let x = event.clientX;
-    let y = event.clientY;
-
-    let rotation_angle_Y = coeficient_rotation_y * (x - window_center_x)/window_width;
-
-    gsap.to(scene, {
-        rotateY: rotation_angle_Y
-    })
+const elements_object = {
+    groups: {
+        left: {
+            node: document.querySelector('.left'),
+            position: {
+                left: "-30%"
+            }
+        },
+        center: {
+            node: document.querySelector('.center'),
+            position: {
+                left: "57.5%"
+            }
+        },
+        scene: {
+            node: document.querySelector('.scene'),
+            position: {
+                rotateX: 10
+            }
+        }
+    },
+    image_containers: {
+        one: {
+            node: document.querySelector('.one'),
+            position: {
+                x: -400,
+                y: 0,
+                z: -900,
+                rotateY: 25
+            }
+        },
+        two: {
+            node: document.querySelector('.two'),
+            position: {
+                x: -200,
+                y: 0,
+                z: -1200,
+                rotateY: 25
+            }
+        },
+        three: {
+            node: document.querySelector('.three'),
+            position: {
+                x: 0,
+                y: 0,
+                z: -1500,
+                rotateY: 0
+            }
+        },
+        four: {
+            node: document.querySelector('.four'),
+            position: {
+                x:-500,
+                y: 0,
+                z: -200,
+                rotateY: 25
+            }
+        },
+        five: {
+            node: document.querySelector('.five'),
+            position: {
+                x: -100,
+                y: -25,
+                z: -50,
+                rotateY: 0
+            }
+        },
+        six: {
+            node: document.querySelector('.six'),
+            position: {
+                x: 400,
+                y: 0,
+                z: -200,
+                rotateY: -25
+            }
+        }
+    }
 }
 
-document.addEventListener('mousemove', rotate_gallery);
+// Initital position
+const one = elements_object.image_containers.one;
+const two = elements_object.image_containers.two;
+const three = elements_object.image_containers.three;
+const four = elements_object.image_containers.four;
+const five = elements_object.image_containers.five;
+const six = elements_object.image_containers.six;
+const left = elements_object.groups.left;
+const center = elements_object.groups.center;
+
+const el_to_position = [one, two, three, four, five, six, left, center]
+
+const position_elements = function(element) {
+    gsap.to(element.node, 0.1, {
+        x: element.position.x || 0,
+        y: element.position.y || 0,
+        z: element.position.z || 0,
+        rotateY: element.position.rotateY || 0,
+        left: element.position.left || 0
+    })
+};
+
+el_to_position.map(function(element) {
+    position_elements(element);
+});
+
+// Function to toggle classes
+// @element: (type -> node) element to toggle class in
+// @class: (type -> string) class to be toggled
+const toggle = function(element, className) {
+    if(element.classList.contains(className)) {
+        element.classList.remove(className);
+    } else {
+        element.classList.add(className);
+    }
+}
 
 // zoom image on click when active group
 var open_image = function(element) {
 
     let element_parent = element.parentElement;
-    let target_element = element.parentElement;
-    let parent_group = element.closest('.group');
+    let closest_group = element.closest('.group');
 
-    if(element_parent.classList.contains('clicked')) {
-        element_parent.classList.remove('clicked');
-    } else {
-        element_parent.classList.add('clicked');
-    }
+    toggle(element_parent, 'clicked');
 
     let element_not_clicked = scene.querySelectorAll('.image_container:not(.clicked)');
 
+    const el_to_reposition = [scene, closest_group, element_parent, element_not_clicked, element];
+
+    let element_parent_tl = new TimelineMax({ paused: true});
     let element_tl = new TimelineMax({ paused: true});
     let element_not_clicked_tl = new TimelineMax({ paused: true});
-    let target_element_tl = new TimelineMax({ paused: true});
-    let parent_group_tl = new TimelineMax({ paused: true});
+    let closest_group_tl = new TimelineMax({ paused: true});
     let scene_tl = new TimelineMax({ paused: true});
 
-    element_tl.to(element, 0.5, {
-        width: "100vw",
+    element_parent_tl.to(element_parent, 0.5, {
         height: "100vh",
+        width: "100vw",
+        rotateY: 0,
+        x: 0,
+        y: 0,
+        z: 0
+    })
+
+    element_tl.to(element, 0.5, {
+        width: "70vw",
         top: 0,
         left:0,
         rotateY: 0
@@ -111,14 +164,7 @@ var open_image = function(element) {
         autoAlpha: 0
     })
 
-    target_element_tl.to(target_element, 1, {
-        rotateY: 0,
-        x: 0,
-        y: 0,
-        z: 0
-    })
-
-    parent_group_tl.to(parent_group, 1, {
+    closest_group_tl.to(closest_group, 1, {
         left: 0
     })
 
@@ -129,15 +175,20 @@ var open_image = function(element) {
         z: 0
     })
 
-    element_tl.play();
-    element_not_clicked_tl.play();
-    target_element_tl.play();
-    parent_group_tl.play();
-    scene_tl.play();
-    document.removeEventListener('mousemove', rotate_gallery)
+    if (!element.classList.contains('zoomed')) {
+
+        element_parent_tl.play();
+        element_tl.play();
+        element_not_clicked_tl.play();
+        closest_group_tl.play();
+        scene_tl.play();
+
+        document.removeEventListener('mousemove', rotate_gallery)
+        toggle(element, 'zoomed');
+    }
 }
 
-// Detect position of clicked element and reposition
+// Detect position of clicked element for reposition
 var detect_component = (function() {
 
     let image_array = [...document.querySelectorAll('.group img')];
@@ -159,19 +210,18 @@ var detect_component = (function() {
     })
 })()
 
-// Reposition camera on click
+// Reposition camera function
 var reposition = function(element) {
 
-    let modifier_x = 0;
-    let modifier_z = 0;
-    let modifier_rotation = 0;
-    let time_line = new TimelineMax();
+    let modifier_x = 0,
+        modifier_z = 0,
+        modifier_rotation = 0,
+        time_line = new TimelineMax();
 
     if (element.classList.contains('left')) {
-        modifier_x = 1.25;
+        modifier_x = 1;
         modifier_z = 1;
         modifier_rotation = -1;
-
     } else {
         modifier_x = 0;
         modifier_z = 0;
@@ -181,85 +231,53 @@ var reposition = function(element) {
     time_line
         .to('.scene', 1, {
             ease: Sine.easeOut,
-                x: 250 * modifier_x
+                x: 600 * modifier_x
             })
         .to('.scene', 1, {
             ease: Sine.easeOut,
-            z: 2000 * modifier_z,
+            z: 1400 * modifier_z,
             rotateY: 20 * modifier_rotation
         })
 }
 
+// Gallery rotation function
+var rotate_gallery = function(event) {
+    let x = event.clientX;
+    let y = event.clientY;
+
+    let is_left_active = false
+    if(left.node.classList.contains('active')) is_left_active = true;
+    let element_modifier = is_left_active ? 0.01 : 1;
+
+    let rotation_angle_y = 0;
+    let translation_x = 0;
+    let translation_z = 0;
+    if (is_left_active) {
+        translation_x = 700;
+        translation_z = 1100;
+        rotation_angle_y = coeficient_rotation_y * (x - window_center_x)/window_width;
+    } else {
+        translation_x = (window_center_x - x)/3
+        rotation_angle_y = coeficient_rotation_y * (x - window_center_x)/window_width;
+    }
+
+    gsap.to(scene, {
+        x: translation_x || 0,
+        z: translation_z || 0,
+        rotateY: rotation_angle_y || 0
+    })
+}
+
+document.addEventListener('mousemove', rotate_gallery);
+
 const close_button = [...document.querySelectorAll('.close_button')];
 close_button.map(function(element) {
     element.addEventListener('click', function() {
-        position_elements();
+        // reposition(element);
+        el_to_position.map(function(element) {
+            position_elements(element);
+        });
+
+        document.addEventListener('mousemove', rotate_gallery);
     })
 });
-
-// Getting all elements in their original position
-const position_elements = function() {
-
-    gsap.to(one, 0.1, {
-        x: -400,
-        z: -900,
-        rotateY: 25
-    })
-
-    gsap.to(two, 0.1, {
-        x: -200,
-        z: -1200,
-        rotateY: 25
-    })
-
-    gsap.to(three, 0.1, {
-        x: 0,
-        z: -1500,
-        rotateY: 0
-    })
-
-    gsap.to(four, 0.1, {
-        x: -100,
-        z: 0,
-        rotateY: 25
-    })
-
-    gsap.to(five, 0.1, {
-        x: 150,
-        z: 200,
-        rotateY: 0
-    })
-
-    gsap.to(six, 0.1, {
-        x: 500,
-        z: 0,
-        rotateY: -25
-    })
-
-    gsap.to(left_group, 0.1, {
-        left: 0
-    });
-
-    gsap.to(center_group, 0.1, {
-        left: "40%"
-    });
-
-    gsap.to(images_elements_array, 0.1, {
-        width: 350,
-        height: "auto"
-    });
-
-    gsap.to(image_container, 0.1, {
-        autoAlpha: 1
-    });
-
-    image_container.map(function(element) {
-        if (element.classList.contains('clicked')) element.classList.remove('clicked');
-    });
-
-    gsap.to(scene, 0.1, {
-        top: "calc(50% - 125px)"
-    });
-
-    document.addEventListener('mousemove', rotate_gallery);
-}

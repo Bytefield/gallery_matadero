@@ -12,9 +12,9 @@ body {
 .scene {
     position: absolute;
     left: 0;
-    top: calc(50% - 125px);
+    top: 20vh;
     width: 100vw;
-    height: 250px;
+    height: 20vh;
     margin: 0;
     perspective: 2500px;
     transform-style: preserve-3d;
@@ -22,32 +22,24 @@ body {
 
 .group {
     position: absolute;
-
+    transform-style: preserve-3d;
 }
 
 .group > div {
     position: absolute;
 }
 
-.left {
-    left: 0%;
-}
-
-.center {
-    left:40%;
+.image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .group img {
-    width: 350px;
+    width: 45vw;
     background-size: cover;
     background-position: center center;
     cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.hovered {
-    width: 375px;
-    transition: all 0.5s ease;
 }
 
 .text {
@@ -62,6 +54,8 @@ body {
 
 .left .text {
     right: 0;
+    font-size: 22px;
+    bottom: -25px;
 }
 
 .center .text {
@@ -77,9 +71,12 @@ body {
 .close_button {
     display: none;
     position: absolute;
-    top: 10px;
-    right: 50px;
+    top: 5vh;
+    right: 18vw;
     color: white;
+    background-color: #00000029;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .clicked .close_button {

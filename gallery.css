@@ -8,12 +8,17 @@
 
 .image_container {
     display: flex;
-    width: 90vmin;
-    margin-left: 5vmin;
+    width: 90vmax;
+    margin-left: 2.5vmax;
     position: fixed;
     opacity: 1;
     transition: opacity 1s ease;
     -webkit-backface-visibility: hidden;
+}
+
+.scrolling_dot {
+    background-image: url('./assets/images/empty_circle.svg');
+    width:10px;
 }
 
 .title_image {
@@ -26,8 +31,12 @@
     transition: opacity 1s ease;
 }
 
+.gallery a {
+    width:45%;
+}
+
 .main_image {
-    width: 45%;
+    width: 100%;
 }
 
 .image_text {

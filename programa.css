@@ -4,8 +4,8 @@
 .content {
     display: flex;
     position: relative;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -13,7 +13,6 @@
 .left,
 .right {
     width: 50%;
-    height:100%;
 }
 
 .left {
@@ -22,7 +21,7 @@
 
 .left .top,
 .left .bottom {
-    width: 60%;
+    width: 100%;
     display: flex;
 }
 
@@ -34,21 +33,46 @@
     transform-style: preserve-3d;
 }
 
-.right img {
-    width: 60%;
-    display: flex;
-}
-
-img {
+.image_container {
     width:100%;
     margin: 0px 10px;
     opacity: 1;
     transition: opacity 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.close.hidden {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.left img {
+    width: 200%;
+}
+
+img {
+    width: 100%;
 }
 
 .hidden {
     opacity: 0;
     transition: opacity 0.2s ease;
+}
+
+.active .close {
+    display: block;
 }
 
 .highlite {
