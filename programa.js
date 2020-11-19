@@ -19,47 +19,50 @@ const fifth = right.querySelector('.right .image_container:last-of-type')
 
 const position_elements = function () {
     gsap.set(left, {
-        x: 0,
-        y: 75,
+        x: -65,
+        y: 10,
         z: -75,
         rotateY: 50
     })
 
     gsap.set(first, {
-        x: 45,
-        y: 10,
-        rotateY: 0
+        x: 104,
+        y: 63,
+        rotateY: 12
     })
 
     gsap.set(second, {
         x: 345,
-        y: 75
+        y: 125,
+        rotateY: 5
     })
 
     gsap.set(third, {
-        x: 175,
-        y: -15,
-        z: 20
+        x: 260,
+        y: -55,
+        z: 90,
+        rotateY: 9
     })
 
     gsap.set(right, {
         x: 250,
-        y: 0,
+        y: 50,
         z: -475,
         rotateY: -70
     })
 
     gsap.set(fourth, {
-        x: 120,
-        y: 20,
+        x: 179,
+        y: 6,
         z: -30,
-        rotateY: -10
+        rotateY: -2
     })
 
     gsap.set(fifth, {
-        x: -120,
-        y: -25,
-        z: 25
+        x: -125,
+        y: -60,
+        z: 85,
+        rotateY: 12
     })
 }
 
@@ -130,23 +133,23 @@ images_array.map(function(element) {
             toggle_class(element, 'active');
 
             // Make clicked image zoom out
-            gsap.to(event.target, {
+            gsap.to(event.target, 0.5, {
                 position: "absolute",
-                width: "70vw",
-                left: "15vw",
-                top: "10vh"
+                width: "60vw",
+                left: "20vw",
+                top: "15vh"
             })
 
             // Make parent containers go to top left corner
             // so zoomed element is centered
-            gsap.to(event.target.parentElement, {
+            gsap.to(event.target.parentElement, 0.5, {
                 position: "absolute",
                 left: 0,
                 top: 0,
                 rotateY: 0
             })
 
-            gsap.to(event.target.parentElement.parentElement, {
+            gsap.to(event.target.parentElement.parentElement, 0.5, {
                 position: "absolute",
                 left: 0,
                 top: 0,

@@ -65,18 +65,19 @@ body {
 
 .text {
     position: absolute;
-    bottom: -20px;
-    line-height: 0.95;
+    bottom: -30px;
+    line-height: 1.2;
+    font-size: 20px;
 }
 
 .four .text {
-    bottom: -35px;
+    bottom: -55px;
 }
 
 .left .text {
     right: 0;
-    font-size: 22px;
-    bottom: -25px;
+    font-size: 27px;
+    bottom: -42px;
 }
 
 .center .text {

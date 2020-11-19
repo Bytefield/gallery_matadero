@@ -9,6 +9,7 @@
             transform-style: preserve-3d;
     -webkit-perspective: 1000px;
             perspective: 1000px;
+    margin-top: -51px;
 }
 
 .left,
@@ -51,8 +52,8 @@
 
 .close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10%;
+    right: 20%;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 1000;
@@ -73,8 +74,28 @@
     width: 200%;
 }
 
+.left .top .image_container:first-of-type img {
+    width: 160%;
+    border-left: 0;
+}
+
+.left .bottom img {
+    width: 170%;
+}
+
 img {
     width: 100%;
+    border-left: 1px solid black;
+    border-right: solid 1px black;
+}
+
+.right .image_container:first-of-type img {
+    width: 88%;
+    border-right: 0;
+}
+
+.right .image_container:last-of-type img {
+    width: 90%;
 }
 
 .hidden {

@@ -46,18 +46,18 @@ const elements_object = {
         two: {
             node: document.querySelector('.two'),
             position: {
-                x: -200,
+                x: -175,
                 y: 0,
-                z: -1200,
+                z: -1275,
                 rotateY: 25
             }
         },
         three: {
             node: document.querySelector('.three'),
             position: {
-                x: 0,
+                x: 5,
                 y: 0,
-                z: -1500,
+                z: -1730,
                 rotateY: 0
             }
         },
@@ -177,7 +177,7 @@ var open_image = function(element) {
         })
 
         element_tl.to(element, 0.5, {
-            width: "70vw",
+            width: "60vw",
             top: 0,
             left:0,
             rotateY: 0
