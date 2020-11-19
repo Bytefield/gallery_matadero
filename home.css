@@ -1,7 +1,7 @@
 body {
+    font-family: 'Oswald', sans-serif;
     -webkit-perspective: 2500px;
             perspective: 2500px;
-    font-family: 'Oswald', sans-serif;
 }
 
 .wrapper {
