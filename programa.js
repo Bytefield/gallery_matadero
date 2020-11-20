@@ -33,12 +33,12 @@ const position_elements = function () {
 
     gsap.set(second, {
         x: 345,
-        y: 125,
+        y: 86,
         rotateY: 5
     })
 
     gsap.set(third, {
-        x: 260,
+        x: 266,
         y: -55,
         z: 90,
         rotateY: 9
@@ -176,15 +176,25 @@ images_array.map(function(element) {
 
 close_button.addEventListener('click', function() {
 
-    let parent_contains = last_clicked.parentElement.parentElement.classList.contains('left');
-    let parent_2nd_contains = last_clicked.parentElement.parentElement.parentElement.classList.contains('left');
-    let last_clicked_width = (parent_contains || parent_2nd_contains) ? "200%" : "100%";
+    let parent_contains = last_clicked.closest('left');
+    var last_clicked_width;
+    if (last_clicked == first.querySelector('img')) {
+        last_clicked_width = "160%";
+    } else if (last_clicked == second.querySelector('img')) {
+        last_clicked_width = "200%";
+    } else if (last_clicked == third.querySelector('img')) {
+        last_clicked_width = "170%";
+    } else if (last_clicked == fourth.querySelector('img')) {
+        last_clicked_width = "88%";
+     } else if (last_clicked == fifth.querySelector('img')) {
+        last_clicked_width = "90%";
+    }
 
     gsap.to(last_clicked, {
         position: "relative",
         top: 0,
         left: 0,
-        width: last_clicked_width
+        width: last_clicked_width || 0
     });
     gsap.to(last_clicked.parentElement, {
         position: "relative"

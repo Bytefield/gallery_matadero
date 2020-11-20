@@ -76,11 +76,31 @@
 
 .left .top .image_container:first-of-type img {
     width: 160%;
-    border-left: 0;
+    border-left-width: 0px;
+    border-right-width: 4px;
+}
+
+.left .top .image_container:last-of-type img {
+    border-left-width: 4px;
+    border-right-width: 7.9px;
 }
 
 .left .bottom img {
     width: 170%;
+    border-left-width: 3px;
+    border-right-width: 5px;
+}
+
+.right .image_container:first-of-type img {
+    width: 88%;
+    border-left-width: 4px;
+    border-right-width: 2px;
+}
+
+.right .image_container:last-of-type img {
+    width: 90%;
+    border-left-width: 5px;
+    border-right-width: 3px;
 }
 
 img {
@@ -89,13 +109,10 @@ img {
     border-right: solid 1px black;
 }
 
-.right .image_container:first-of-type img {
-    width: 88%;
-    border-right: 0;
-}
-
-.right .image_container:last-of-type img {
-    width: 90%;
+.active img {
+    width: 160%;
+    border-left-width: 2px !important;
+    border-right-width: 2px !important;
 }
 
 .hidden {

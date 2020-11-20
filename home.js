@@ -64,9 +64,9 @@ const elements_object = {
         four: {
             node: document.querySelector('.four'),
             position: {
-                x:-500,
+                x:-550,
                 y: 0,
-                z: -200,
+                z: -400,
                 rotateY: 25
             }
         },
@@ -82,9 +82,9 @@ const elements_object = {
         six: {
             node: document.querySelector('.six'),
             position: {
-                x: 400,
+                x: 550,
                 y: 0,
-                z: -200,
+                z: -400,
                 rotateY: -25
             }
         }
@@ -147,7 +147,7 @@ const toggle_class = function(element, className) {
 }
 
 var elements_not_clicked;
-var is_clicked;
+var is_clicked = false;
 
 // zoom image on click when active group
 var open_image = function(element) {
@@ -182,10 +182,10 @@ var open_image = function(element) {
             left:0,
             rotateY: 0
         })
+
         Array.from(elements_not_clicked).map(function(element) {
             toggle_class(element, 'hidden');
         });
-        // toggle_class(elements_not_clicked, 'hidden');
 
         closest_group_tl.to(closest_group, 1, {
             left: 0
@@ -208,16 +208,6 @@ var open_image = function(element) {
 
             document.removeEventListener('mousemove', rotate_gallery)
             toggle_class(element, 'is_zoomed');
-
-            element.addEventListener('click', function() {
-                let url = element.getAttribute('data-url') || '#';
-                let link = document.createElement('a');
-                link.setAttribute('href', url);
-                link.setAttribute('target', "_parent");
-                link.click();
-                // window.open(url, '_self');
-            });
-
         }
 
         is_clicked = true;
@@ -225,7 +215,7 @@ var open_image = function(element) {
 }
 
 // Detect position of clicked element for reposition (IIFE)
-var detect_component = (function() {
+var detect_component = function() {
 
     let image_array = [...document.querySelectorAll('.group img')];
 
@@ -244,9 +234,23 @@ var detect_component = (function() {
                 toggle_class(clicked_group,'active');
                 reposition(clicked_group);
             }
-        })
-    })
-})()
+        });
+    });
+};
+
+[...document.querySelectorAll('.group img')].map(function(element) {
+    element.addEventListener('click', function(event) {
+        if (event.target.classList.contains('is_zoomed')) {
+            let url = event.target.getAttribute('data-url') || '#';
+            let link = document.createElement('a');
+            link.setAttribute('href', url);
+            link.setAttribute('target', "_parent");
+            link.click();
+        }
+    });
+});
+
+detect_component();
 
 // Reposition camera function
 var reposition = function(element) {

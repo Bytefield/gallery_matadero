@@ -6,7 +6,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: ""
+        url: "http://formacionsimple.com/pruebasbid/archivos/proyecto/faces-of-assassination-website"
     },
     {
         name: "digital_telepresencia",
@@ -14,7 +14,8 @@ const images = [
         title: "digital",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/telepresencia"
     },
     {
         name: "digital_rediseno",
@@ -22,7 +23,8 @@ const images = [
         title: "digital",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/rediseno-sitio-web-del-centro-cultural-la-moneda"
     },
     {
         name: "digital_mariachi",
@@ -30,7 +32,8 @@ const images = [
         title: "digital",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mariachi-gema-negra"
     },
     {
         name: "desarrollo_pylonesque",
@@ -38,7 +41,8 @@ const images = [
         title: "interiores",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/pylonesque"
     },
     {
         name: "espacios_mo",
@@ -46,7 +50,8 @@ const images = [
         title: "interiores",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mo-de-movimiento"
     },
     {
         name: "espacios_mimm",
@@ -54,7 +59,8 @@ const images = [
         title: "interiores",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mimm-museo-itinerante-de-la-memoria-y-la-identidad-de-los-montes-de-maria"
     },
     {
         name: "grafico_inor",
@@ -62,7 +68,8 @@ const images = [
         title: "grafico",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/inor"
     },
     {
         name: "grafico_yasuni",
@@ -70,7 +77,8 @@ const images = [
         title: "grafico",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/yasuni-cartografia-sonora"
     },
     {
         name: "grafico_senaletica",
@@ -78,7 +86,8 @@ const images = [
         title: "grafico",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/senaletica-cabanas-de-albeida"
     },
     {
         name: "grafico_identidadvisual",
@@ -86,7 +95,8 @@ const images = [
         title: "grafico",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/identidad-visual-familia-tipografica-museo-de-arte-moderno-de-buenos-aires"
     },
     {
         name: "integral_manufactura",
@@ -94,7 +104,8 @@ const images = [
         title: "integral",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional"
     },
     {
         name: "integral_concentrico",
@@ -102,7 +113,8 @@ const images = [
         title: "integral",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/concentrico-festival-internacional-de-arquitectura-y-diseno-de-logrono"
     },
     {
         name: "integral_usule",
@@ -110,7 +122,8 @@ const images = [
         title: "integral",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/u-sule-casa-cosmica-talamanquena"
     },
     {
         name: "integral_sonidostextiles",
@@ -118,7 +131,8 @@ const images = [
         title: "integral",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/sonidos-textiles"
     },
     {
         name: "moda_coleccion",
@@ -126,7 +140,8 @@ const images = [
         title: "moda",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/coleccion-002-tierra"
     },
     {
         name: "moda_arekuna",
@@ -134,7 +149,8 @@ const images = [
         title: "moda",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/serie-arekuna"
     },
     {
         name: "moda_escapular",
@@ -142,7 +158,8 @@ const images = [
         title: "moda",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/tejido-escapular"
     },
     {
         name: "moda_puna",
@@ -150,7 +167,8 @@ const images = [
         title: "moda",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/puna-project"
     },
     {
         name: "producto_natura",
@@ -158,7 +176,8 @@ const images = [
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/natura"
     },
     {
         name: "producto_frontera",
@@ -166,7 +185,8 @@ const images = [
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/frontera-enfriador-portatil-para-agua"
     },
     {
         name: "producto_aplicador",
@@ -174,7 +194,8 @@ const images = [
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/aplicador-analgesico-para-recien-nacido"
     },
     {
         name: "producto_kit",
@@ -182,7 +203,8 @@ const images = [
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/kit"
     },
     {
         name: "servicios_unidaddesalud",
@@ -190,7 +212,8 @@ const images = [
         title: "servicios",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/unidad-de-salud-integral-transformando-redsalud"
     },
     {
         name: "servicios_upro",
@@ -198,7 +221,8 @@ const images = [
         title: "servicios",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/u-pro"
     },
     {
         name: "publicaciones_conversaciones",
@@ -206,7 +230,8 @@ const images = [
         title: "publicaciones",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/publicaciones/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/conversaciones-sobre-diseno-y-creatividad"
     },
     {
         name: "publicaciones_historia",
@@ -214,7 +239,8 @@ const images = [
         title: "publicaciones",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/publicaciones/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/historia-da-teoria-da-arquitetura"
     },
     {
         name: "desarrollo_cobre",
@@ -222,7 +248,8 @@ const images = [
         title: "investigacion",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/desarrollo/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cobre-chileno-en-textiles-antimicrobianos-para-el-cuidado-de-la-salud-de-bebes"
     },
     {
         name: "desarrollo_desarrollodemateriales",
@@ -230,7 +257,8 @@ const images = [
         title: "investigacion",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/desarrollo/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/desarrollo-de-materiales-ligeros-para-aplicacion-en-personas-con-discapacidad"
     },
     {
         name: "cultura_aplicador",
@@ -238,7 +266,8 @@ const images = [
         title: "cultura",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/aplicador-analgesico-para-recien-nacido-2"
     },
     {
         name: "cultura_exyone",
@@ -246,7 +275,8 @@ const images = [
         title: "cultura",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/exyone-shoulder"
     },
     {
         name: "cultura_cocoto",
@@ -254,7 +284,8 @@ const images = [
         title: "cultura",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cocoto"
     },
     {
         name: "cultura_acra",
@@ -262,7 +293,8 @@ const images = [
         title: "cultura",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/acra-ampliacion-de-las-capacidades-de-respiradores-artificiales"
     },
     {
         name: "cultura_ventilador",
@@ -270,7 +302,8 @@ const images = [
         title: "cultura",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/ventilador-pulmonar-spe1500"
     },
     {
         name: "desarrollo_manufactura",
@@ -278,7 +311,8 @@ const images = [
         title: "desarrollo",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional"
     },
     {
         name: "desarrollo_kipi",
@@ -286,7 +320,8 @@ const images = [
         title: "desarrollo",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/kipi-la-nina-robot-eco-bilingue"
     },
     {
         name: "desarrollo_pylonesque",
@@ -294,7 +329,8 @@ const images = [
         title: "desarrollo",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/pylonesque"
     },
     {
         name: "personas_hospital",
@@ -302,7 +338,8 @@ const images = [
         title: "personas",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/hospital-sant-joan-de-deu"
     },
     {
         name: "participacion_CRIA",
@@ -310,7 +347,8 @@ const images = [
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cria-experiencias-de-invencion"
     },
     {
         name: "participacion_manuelas",
@@ -318,7 +356,8 @@ const images = [
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/las-manuelas-art-series"
     },
     {
         name: "participacion_acidade",
@@ -326,7 +365,8 @@ const images = [
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/a-cidade-com-as-pessoas-mais-felizes-do-mundo"
     },
     {
         name: "participacion_diseñoactivacion",
@@ -334,7 +374,8 @@ const images = [
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/diseno-para-la-activacion-del-territorio-y-el-paisaje-de-la-huerta-de-murcia"
     },
     {
         name: "participacion_mujeres",
@@ -342,7 +383,8 @@ const images = [
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mujeres-con-calle"
     },
     {
         name: "sostenibilidad_coleccion",
@@ -350,7 +392,8 @@ const images = [
         title: "sostenibilidad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/coleccion-soldados-de-la-tierra"
     },
     {
         name: "desarrollo_manufactura",
@@ -358,7 +401,8 @@ const images = [
         title: "sostenibilidad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional-2"
     },
     {
         name: "sostenibilidad_frontera",
@@ -366,7 +410,8 @@ const images = [
         title: "sostenibilidad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/frontera-enfriador-portatil-para-agua"
     },
     {
         name: "ciudad_concentrico",
@@ -374,7 +419,8 @@ const images = [
         title: "ciudad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: ""
     },
     {
         name: "ciudad_lapaz",
@@ -382,7 +428,8 @@ const images = [
         title: "ciudad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/la-paz-ciudad-del-cielo"
     },
     {
         name: "ciudad_bariloche",
@@ -390,7 +437,8 @@ const images = [
         title: "ciudad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/marca-ciudad-bariloche"
     },
     {
         name: "ciudad_habana",
@@ -398,7 +446,8 @@ const images = [
         title: "ciudad",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/imagen-ciudad-de-la-habana-y-campana-por-los-500-anos-de-la-ciudad"
     },
     {
         name: "moda_puna",
@@ -406,7 +455,8 @@ const images = [
         title: "emprendimiento",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/puna-project"
     },
     {
         name: "emprendimiento_gcare",
@@ -414,10 +464,10 @@ const images = [
         title: "emprendimiento",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        tags: [],
+        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/gcare"
     }
 ];
-// Remember to add same number of repeated images at end of array for filling purpouses
 
 const images_path = "./assets/images/gallery/categorias/desktop/";
 var gallery_element_array = [];
@@ -448,7 +498,7 @@ images.map(function(image, index) {
             "<div class='title_image'>" +
                 "<img src='" + title_image_src + "' alt='" + image.title + "' class='image_title' data-url='" + url + "'/>" +
             "</div>" +
-            "<a href='#'><img src='" + image_path + "' alt='" + image.name + "' class='main_image' /></a>" +
+            "<a href='" + image.url + "' target='_parent'><img src='" + image_path + "' alt='" + image.name + "' class='main_image' /></a>" +
             "<p class='image_text'>" + image.text + "</p>" +
         "</div>";
 
@@ -466,24 +516,7 @@ const image_alignment_bottom = scrolling_height -(window_height - (5 * percent_h
 
 image_elements_array.map(function(element, index) {
     element.style.bottom = image_alignment_bottom + "px";
-    let img = element.querySelector('img');
-    img.addEventListener('click', function() {
-        let url = this.getAttribute('data-url') || '#';
-        let link = document.createElement('a');
-        link.setAttribute('href', url);
-        link.setAttribute('target', "_parent");
-        link.click();
-    });
 });
-
-// // Creating and positioning scrolling dots
-// const images_per_dot = 5;
-// const scrolling_dots_number = number_total_images / images_per_dot;
-// const scrolling_dots_container = document.querySelector('.scrolling_dots_container')
-// for (let i=0; i<=scrolling_dots_number; i++) {
-//     let scrolling_dot = '<div class="scrolling_dot"></div>'
-//     scrolling_dots_container.innerHTML += scrolling_dot;
-// }
 
 // function to position visible elements
 var position_elements = function(counter) {
@@ -512,9 +545,11 @@ var position_elements = function(counter) {
 
         // hide / show first element
         if (index < counter)  {
-            element.classList.add('hide');
+            element.classList.add('hidden');
+            element.classList.remove('show');
         }  else {
-            element.classList.remove('hide');
+            element.classList.add('show');
+            element.classList.remove('hidden');
         }
 
         // hide / show repeated title image
@@ -551,8 +586,8 @@ $('.gallery').mousewheel(function(event, delta) {
     if (delta < 0) scroll_counter++;
     else scroll_counter--;
 
-    if ((scroll_counter % 75 == 0) && (delta < 0) && (ticker < image_elements_array.length - 1)) ticker++;
-    else if ((scroll_counter % 75 == 0) && (delta > 0) && (ticker >= 0)) ticker--;
+    if ((scroll_counter % 15 == 0) && (delta < 0) && (ticker < image_elements_array.length - 1)) ticker++;
+    else if ((scroll_counter % 15 == 0) && (delta > 0) && (ticker >= 0)) ticker--;
 
     console.log(ticker);
     if(last_ticker != ticker && ((ticker >= 0) || (ticker <= gallery_element_array))) {
