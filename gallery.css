@@ -1,6 +1,10 @@
 ::-webkit-scrollbar{width:2px;height:2px;}
 ::-webkit-scrollbar-button{width:2px;height:2px;}
 
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 .gallery {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
