@@ -6,7 +6,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "http://formacionsimple.com/pruebasbid/archivos/proyecto/faces-of-assassination-website"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/faces-of-assassination-website"
     },
     {
         name: "digital_telepresencia",
@@ -15,7 +15,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/telepresencia"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/telepresencia"
     },
     {
         name: "digital_rediseno",
@@ -24,7 +24,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/rediseno-sitio-web-del-centro-cultural-la-moneda"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/rediseno-sitio-web-del-centro-cultural-la-moneda"
     },
     {
         name: "digital_mariachi",
@@ -33,7 +33,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mariachi-gema-negra"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/mariachi-gema-negra"
     },
     {
         name: "desarrollo_pylonesque",
@@ -42,16 +42,16 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/pylonesque"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/pylonesque"
     },
     {
         name: "espacios_mo",
-        text: "Mención//<br>Mo de Movimiento",
+        text: "Mención //<br>Mo de Movimiento",
         title: "interiores",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mo-de-movimiento"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/mo-de-movimiento"
     },
     {
         name: "espacios_mimm",
@@ -60,7 +60,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mimm-museo-itinerante-de-la-memoria-y-la-identidad-de-los-montes-de-maria"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/mimm-museo-itinerante-de-la-memoria-y-la-identidad-de-los-montes-de-maria"
     },
     {
         name: "grafico_inor",
@@ -69,7 +69,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/inor"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/inor"
     },
     {
         name: "grafico_yasuni",
@@ -78,7 +78,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/yasuni-cartografia-sonora"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/yasuni-cartografia-sonora"
     },
     {
         name: "grafico_senaletica",
@@ -87,7 +87,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/senaletica-cabanas-de-albeida"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/senaletica-cabanas-de-albeida"
     },
     {
         name: "grafico_identidadvisual",
@@ -96,7 +96,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/identidad-visual-familia-tipografica-museo-de-arte-moderno-de-buenos-aires"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/identidad-visual-familia-tipografica-museo-de-arte-moderno-de-buenos-aires"
     },
     {
         name: "integral_manufactura",
@@ -105,7 +105,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/manufactura-nacional"
     },
     {
         name: "integral_concentrico",
@@ -114,7 +114,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/concentrico-festival-internacional-de-arquitectura-y-diseno-de-logrono"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/concentrico-festival-internacional-de-arquitectura-y-diseno-de-logrono"
     },
     {
         name: "integral_usule",
@@ -123,7 +123,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/u-sule-casa-cosmica-talamanquena"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/u-sule-casa-cosmica-talamanquena"
     },
     {
         name: "integral_sonidostextiles",
@@ -132,7 +132,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/sonidos-textiles"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/sonidos-textiles"
     },
     {
         name: "moda_coleccion",
@@ -141,7 +141,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/coleccion-002-tierra"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/coleccion-002-tierra"
     },
     {
         name: "moda_arekuna",
@@ -150,7 +150,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/serie-arekuna"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/serie-arekuna"
     },
     {
         name: "moda_escapular",
@@ -159,16 +159,16 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/tejido-escapular"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/tejido-escapular"
     },
     {
         name: "moda_puna",
-        text: "Mención //Puna Project",
+        text: "Mención //<br>Puna Project",
         title: "moda",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/puna-project"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/puna-project"
     },
     {
         name: "producto_natura",
@@ -177,7 +177,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/natura"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/natura"
     },
     {
         name: "producto_frontera",
@@ -186,16 +186,16 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/frontera-enfriador-portatil-para-agua"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/frontera-enfriador-portatil-para-agua"
     },
     {
         name: "producto_aplicador",
-        text: "Mención //Aplicador analgésico para recién nacido",
+        text: "Mención //<br>Aplicador analgésico para recién nacido",
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/aplicador-analgesico-para-recien-nacido"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/aplicador-analgesico-para-recien-nacido"
     },
     {
         name: "producto_kit",
@@ -204,7 +204,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/categorias/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/kit"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/kit"
     },
     {
         name: "servicios_unidaddesalud",
@@ -213,7 +213,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/unidad-de-salud-integral-transformando-redsalud"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/unidad-de-salud-integral-transformando-redsalud"
     },
     {
         name: "servicios_upro",
@@ -222,7 +222,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/u-pro"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/u-pro"
     },
     {
         name: "publicaciones_conversaciones",
@@ -231,7 +231,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/publicaciones/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/conversaciones-sobre-diseno-y-creatividad"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/conversaciones-sobre-diseno-y-creatividad"
     },
     {
         name: "publicaciones_historia",
@@ -240,7 +240,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/publicaciones/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/historia-da-teoria-da-arquitetura"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/historia-da-teoria-da-arquitetura"
     },
     {
         name: "desarrollo_cobre",
@@ -249,7 +249,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/desarrollo/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cobre-chileno-en-textiles-antimicrobianos-para-el-cuidado-de-la-salud-de-bebes"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/cobre-chileno-en-textiles-antimicrobianos-para-el-cuidado-de-la-salud-de-bebes"
     },
     {
         name: "desarrollo_desarrollodemateriales",
@@ -258,7 +258,47 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/desarrollo/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/desarrollo-de-materiales-ligeros-para-aplicacion-en-personas-con-discapacidad"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/desarrollo-de-materiales-ligeros-para-aplicacion-en-personas-con-discapacidad"
+    },
+    {
+        name: "tstimoni",
+        extension: ".png",
+        text: "Premio //<br>Testimoni gràfic d’un territori, símbol d’un poble ",
+        title: "porycon_lacultura",
+        title_path: "./assets/images/gallery/logos_categorias_SVG/",
+        path: "./assets/images/gallery/desarrollo/desktop/",
+        tags: [],
+        url: ""
+    },
+    {
+        name: "integral_usule",
+        extension: ".jpg",
+        text: "Mención //<br>Ù-SuLé. Casa cósmica talamanqueña",
+        title: "porycon_lacultura",
+        title_path: "./assets/images/gallery/logos_categorias_SVG/",
+        path: "./assets/images/gallery/desarrollo/desktop/",
+        tags: [],
+        url: ""
+    },
+    {
+        name: "emisarias",
+        extension: ".png",
+        text: "Mención //<br>Emisarias de la Lluvia: Anuros en la Época Precolombina",
+        title: "porycon_lacultura",
+        title_path: "./assets/images/gallery/logos_categorias_SVG/",
+        path: "./assets/images/gallery/desarrollo/desktop/",
+        tags: [],
+        url: ""
+    },
+    {
+        name: "nicetoomeetyou",
+        extension: ".png",
+        text: "Mención //<br>Nice To Meet You",
+        title: "porycon_lacultura",
+        title_path: "./assets/images/gallery/logos_categorias_SVG/",
+        path: "./assets/images/gallery/desarrollo/desktop/",
+        tags: [],
+        url: ""
     },
     {
         name: "cultura_aplicador",
@@ -267,7 +307,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/aplicador-analgesico-para-recien-nacido-2"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/aplicador-analgesico-para-recien-nacido-2"
     },
     {
         name: "cultura_exyone",
@@ -276,7 +316,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/exyone-shoulder"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/exyone-shoulder"
     },
     {
         name: "cultura_cocoto",
@@ -285,7 +325,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cocoto"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/cocoto"
     },
     {
         name: "cultura_acra",
@@ -294,7 +334,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/acra-ampliacion-de-las-capacidades-de-respiradores-artificiales"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/acra-ampliacion-de-las-capacidades-de-respiradores-artificiales"
     },
     {
         name: "cultura_ventilador",
@@ -303,7 +343,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/ventilador-pulmonar-spe1500"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/ventilador-pulmonar-spe1500"
     },
     {
         name: "desarrollo_manufactura",
@@ -312,7 +352,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/manufactura-nacional"
     },
     {
         name: "desarrollo_kipi",
@@ -321,7 +361,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/kipi-la-nina-robot-eco-bilingue"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/kipi-la-nina-robot-eco-bilingue"
     },
     {
         name: "desarrollo_pylonesque",
@@ -330,7 +370,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/pylonesque"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/pylonesque"
     },
     {
         name: "personas_hospital",
@@ -339,7 +379,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/hospital-sant-joan-de-deu"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/hospital-sant-joan-de-deu"
     },
     {
         name: "participacion_CRIA",
@@ -348,7 +388,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/cria-experiencias-de-invencion"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/cria-experiencias-de-invencion"
     },
     {
         name: "participacion_manuelas",
@@ -357,7 +397,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/las-manuelas-art-series"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/las-manuelas-art-series"
     },
     {
         name: "participacion_acidade",
@@ -366,7 +406,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/a-cidade-com-as-pessoas-mais-felizes-do-mundo"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/a-cidade-com-as-pessoas-mais-felizes-do-mundo"
     },
     {
         name: "participacion_diseñoactivacion",
@@ -375,7 +415,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/diseno-para-la-activacion-del-territorio-y-el-paisaje-de-la-huerta-de-murcia"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/diseno-para-la-activacion-del-territorio-y-el-paisaje-de-la-huerta-de-murcia"
     },
     {
         name: "participacion_mujeres",
@@ -384,7 +424,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/mujeres-con-calle"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/mujeres-con-calle"
     },
     {
         name: "sostenibilidad_coleccion",
@@ -393,7 +433,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/coleccion-soldados-de-la-tierra"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/coleccion-soldados-de-la-tierra"
     },
     {
         name: "desarrollo_manufactura",
@@ -402,7 +442,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/manufactura-nacional-2"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/manufactura-nacional-2"
     },
     {
         name: "sostenibilidad_frontera",
@@ -411,7 +451,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/frontera-enfriador-portatil-para-agua"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/frontera-enfriador-portatil-para-agua"
     },
     {
         name: "ciudad_concentrico",
@@ -429,7 +469,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/la-paz-ciudad-del-cielo"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/la-paz-ciudad-del-cielo"
     },
     {
         name: "ciudad_bariloche",
@@ -438,7 +478,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/marca-ciudad-bariloche"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/marca-ciudad-bariloche"
     },
     {
         name: "ciudad_habana",
@@ -447,7 +487,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/imagen-ciudad-de-la-habana-y-campana-por-los-500-anos-de-la-ciudad"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/imagen-ciudad-de-la-habana-y-campana-por-los-500-anos-de-la-ciudad"
     },
     {
         name: "moda_puna",
@@ -456,7 +496,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/puna-project"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/puna-project"
     },
     {
         name: "emprendimiento_gcare",
@@ -465,7 +505,7 @@ const images = [
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
         path: "./assets/images/gallery/especiales/desktop/",
         tags: [],
-        url: "https://formacionsimple.com/pruebasbid/archivos/proyecto/gcare"
+        url: "https://bid-dimad.org/bid20/archivos/proyecto/gcare"
     }
 ];
 
@@ -489,7 +529,8 @@ var last_image_title = "";
 
 images.map(function(image, index) {
 
-    let image_path = "./assets/images/gallery/optimized/" + image.name + ".jpg";
+    let image_extension = image.extension || ".jpg"
+    let image_path = "./assets/images/gallery/optimized/" + image.name + image_extension;
     let title_image_src = image.title_path + image.title + ".svg"
     let url = image.url || "#"
 
@@ -586,13 +627,35 @@ $('.gallery').mousewheel(function(event, delta) {
     if (delta < 0) scroll_counter++;
     else scroll_counter--;
 
-    if ((scroll_counter % 15 == 0) && (delta < 0) && (ticker < image_elements_array.length - 1)) ticker++;
-    else if ((scroll_counter % 15 == 0) && (delta > 0) && (ticker >= 0)) ticker--;
+    if  (
+            (scroll_counter % 15 == 0)
+            && (delta < 0)
+            && (ticker < image_elements_array.length - 1)
+        ) ticker++;
+    else if (
+            (scroll_counter % 15 == 0)
+            && (delta > 0)
+            && (ticker >= 0)
+        ) ticker--;
 
     console.log(ticker);
-    if(last_ticker != ticker && ((ticker >= 0) || (ticker <= gallery_element_array))) {
-            position_elements(ticker);
+    if ( (last_ticker != ticker) && (ticker >= 0) ) {
+        position_elements(ticker);
     }
 
     last_ticker = ticker
 });
+
+// Testing key pressing
+// document.onkeydown = checkKey;
+document.addEventListener('keydown', function(event) {
+    if ( (event.code == "ArrowUp")  && (ticker < image_elements_array.length - 1) ) ticker++;
+    else if ( (event.code == "ArrowDown") && (ticker > 0) ) ticker--;
+    console.log(ticker);
+
+    if ( (last_ticker != ticker) && (ticker >= 0) ) {
+        position_elements(ticker);
+    }
+
+    last_ticker = ticker
+})

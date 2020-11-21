@@ -1,72 +1,97 @@
 ::-webkit-scrollbar{width:2px;height:2px;}
 ::-webkit-scrollbar-button{width:2px;height:2px;}
 
-.centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
-
-.left_menu {
-    height: 100%;
-    width: 20%;
-    border-right: 1px solid #000;
+body {
+    font-family: 'Oswald', sans-serif;
 }
 
 .gallery {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    overflow-y: auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1500px;
+            perspective: 1500px;
 }
 
-.scroll_item {
+.image_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vmax;
+    margin-left: 2.5vmax;
+    position: fixed;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+.scrolling_dot {
+    background-image: url('./assets/images/empty_circle.svg');
+    width:10px;
+}
+
+.title_image {
+    width: 20%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 20px;
+    opacity: 1;
+    display: block;
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+.gallery a {
+    width:45%;
+}
+
+.main_image {
     width: 100%;
-    z-index: 1000;
-}
-
-.image {
-    width: 470px;
-    position: fixed;
-    display: none;
-    bottom: 50px;
-    left: 22.5%;
-}
-
-.image.visible {
-    display: block;
-}
-
-.image_text,
-.image_title {
-    position: fixed;
-    display: none;
-}
-
-.text_visible .image_text,
-.text_visible .image_title {
-    display: block;
 }
 
 .image_text {
-    bottom: 33px;
-    left: 775px;
-    line-height: 0.85;
+    width: 35%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0px 0 3px 0;
+    padding-left: 20px;
+    line-height: 1.2;
 }
 
-.image_title {
-    bottom: 330px;
-    right: 1025px;
+@keyframes hide {
+    0% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
-footer {
-    height: 50px;
+@keyframes show {
+    0% {
+        visibility: visible;
+        opacity: 0
+    } 100% {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    animation: hide 1s forwards;
+}
+
+.show {
+    animation: show 1s forwards;
+}
+
+.hide {
+    display: none;
 }

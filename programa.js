@@ -19,26 +19,27 @@ const fifth = right.querySelector('.right .image_container:last-of-type')
 
 const position_elements = function () {
     gsap.set(left, {
-        x: -65,
+        x: 0,
         y: 10,
         z: -75,
         rotateY: 50
     })
 
     gsap.set(first, {
-        x: 104,
+        x: 0,
         y: 63,
-        rotateY: 12
+        z: 0,
+        rotateY: 5
     })
 
     gsap.set(second, {
-        x: 345,
+        x: 280,
         y: 86,
         rotateY: 5
     })
 
     gsap.set(third, {
-        x: 266,
+        x: 201,
         y: -55,
         z: 90,
         rotateY: 9
@@ -74,6 +75,12 @@ const reset_transform = function() {
         y: 0,
         z: 0,
         rotateY: 0
+    })
+
+    gsap.to(first, {
+        x: 0,
+        y: 0,
+        z: 0,
     })
 
     gsap.to(second, {
@@ -133,7 +140,7 @@ images_array.map(function(element) {
             toggle_class(element, 'active');
 
             // Make clicked image zoom out
-            gsap.to(event.target, 0.5, {
+            gsap.to(event.target, 1, {
                 position: "absolute",
                 width: "60vw",
                 left: "20vw",
@@ -142,14 +149,14 @@ images_array.map(function(element) {
 
             // Make parent containers go to top left corner
             // so zoomed element is centered
-            gsap.to(event.target.parentElement, 0.5, {
+            gsap.to(event.target.parentElement, 1, {
                 position: "absolute",
                 left: 0,
                 top: 0,
                 rotateY: 0
             })
 
-            gsap.to(event.target.parentElement.parentElement, 0.5, {
+            gsap.to(event.target.parentElement.parentElement, 1, {
                 position: "absolute",
                 left: 0,
                 top: 0,
@@ -158,7 +165,7 @@ images_array.map(function(element) {
 
             let elements_not_active = [...document.querySelectorAll('.image_container:not(.active)')];
             elements_not_active.map(function(element) {
-                gsap.to(element, 0.1, {
+                gsap.to(element, 0.01, {
                     autoAlpha: 0
                 });
             });

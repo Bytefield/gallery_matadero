@@ -91,3 +91,7 @@ body {
 .show {
     animation: show 1s forwards;
 }
+
+.hide {
+    display: none;
+}

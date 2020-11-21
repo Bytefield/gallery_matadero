@@ -1,159 +1,132 @@
 const images = [
     {
-        name: "digital_rediseño.png",
-        text: "Mención //<br>Rediseno sitio web del Centro Cultural de La Moneda",
-        title: "./assets/images/gallery/logos_categorias_SVG/digital.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "FelixBeltran",
+        text: "Felix Beltrán",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "digital_mariachi.png",
-        text: "Mención //<br>Mariachi Gema Negra",
-        title: "./assets/images/gallery/logos_categorias_SVG/digital.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "GiovanniVannucchi",
+        text: "Giovanni Vannucchi",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "desarrollo_pylonesque.png",
-        text: "Mención //<br>Pylonesque",
-        title: "./assets/images/gallery/logos_categorias_SVG/interiores.svg",
-        path: "./assets/images/gallery/especiales/desktop/",
-        tags: []
+        name: "RuthKlotzel",
+        text: "Ruth Klotzel",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "espacios_mo.png",
-        text: "Mención//<br>Mo de Movimiento",
-        title: "./assets/images/gallery/logos_categorias_SVG/interiores.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "GonzaloCastillo",
+        text: "Gonzalo Castillo",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "espacios_mimm.png",
-        text: "Mención //<br>MIMM. Museo Itinerante de la Memoria y la Identidad de Los Montes de María",
-        title: "./assets/images/gallery/logos_categorias_SVG/interiores.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "KarinaSalguero-Moya",
+        text: "Karina Salguero-Moya",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "grafico_iñor.png",
-        text: "Premio //<br>Iñor",
-        title: "./assets/images/gallery/logos_categorias_SVG/grafico.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "PeterMussfeldt",
+        text: "Peter Mussfeldt",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "grafico_yasuni.png",
-        text: "Mención //<br>YASUNÍ. Cartografía sonora",
-        title: "./assets/images/gallery/logos_categorias_SVG/grafico.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "ManuelLecuona",
+        text: "Manuel Lecuona",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "grafico_señaletica.png",
-        text: "Mención //<br>Señalética Cabanas de Albeida",
-        title: "./assets/images/gallery/logos_categorias_SVG/grafico.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "OscarSalinas",
+        text: "Oscar Salinas",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "grafico_identidadvisual.png",
-        text: "Mención //<br>Identidad visual/familia tipográfica Museo de Arte Moderno de Buenos Aires",
-        title: "./assets/images/gallery/logos_categorias_SVG/grafico.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "FranciscoProvidencia",
+        text: "Francisco Providência",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "integral_manufactura.png",
-        text: "Premio //<br>Manufactura Nacional",
-        title: "./assets/images/gallery/logos_categorias_SVG/integral.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "FelipeCesarLondono",
+        text: "Felipe César Londoño",
+        title: "equipo_BID",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "integral_concentrico.png",
-        text: "Mención //<br>Concéntrico, Festival Internacional de Arquitectura y Diseño de Logroño",
-        title: "./assets/images/gallery/logos_categorias_SVG/integral.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "LulaCapriel",
+        text: "Lula Capriel",
+        title: "equipo_BID",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "integral_usule.png",
-        text: "Mención //<br>Ù-SuLé. Casa cósmica talamanqueña",
-        title: "./assets/images/gallery/logos_categorias_SVG/integral.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "OvidioMorales",
+        text: "Ovidio Morales",
+        title: "equipo_BID",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "integral_sonidostextiles.png",
-        text: "Mención //<br>Sonidos Textiles",
-        title: "./assets/images/gallery/logos_categorias_SVG/integral.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "CarlosZuniga",
+        text: "Carlos Zúñiga",
+        title: "equipo_BID",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "moda_coleccion.png",
-        text: "Premio //<br>Colección 002. Tierra",
-        title: "./assets/images/gallery/logos_categorias_SVG/moda.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "AnabellaRondina",
+        text: "Anabella Rondina",
+        title: "equipo_BID",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     },
     {
-        name: "moda_arekuna.png",
-        text: "Mención //<br>Serie Arekuna",
-        title: "./assets/images/gallery/logos_categorias_SVG/moda.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "moda_escapular.png",
-        text: "Mención //<br>Tejido Escapular",
-        title: "./assets/images/gallery/logos_categorias_SVG/moda.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "moda_puna.png",
-        text: "Mención //Puna Project",
-        title: "./assets/images/gallery/logos_categorias_SVG/moda.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "producto_natura.png",
-        text: "Premio //<br>Natura",
-        title: "./assets/images/gallery/logos_categorias_SVG/producto.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "producto_frontera.png",
-        text: "Mención //<br>Frontera: Enfriador portátil para agua",
-        title: "./assets/images/gallery/logos_categorias_SVG/producto.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "producto_aplicador.png",
-        text: "Mención //Aplicador analgésico para recién nacido",
-        title: "./assets/images/gallery/logos_categorias_SVG/producto.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
-    },
-    {
-        name: "producto_kit.png",
-        text: "Mención //<br>KIT",
-        title: "./assets/images/gallery/logos_categorias_SVG/producto.svg",
-        path: "./assets/images/gallery/categorias/desktop/",
-        tags: []
+        name: "AlexLobos",
+        text: "Alex Lobos",
+        title: "jurado_bid18",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        url: ""
     }
 ];
-// Remember to add same number of repeated images at end of array for filling purpouses
 
 const images_path = "./assets/images/gallery/categorias/desktop/";
+var gallery_element_array = [];
 var image_elements_array = [];
 
-const images_to_display = 8
-const positioning_coeficient = 25;
+const images_to_display = 9
+const positioning_coeficient = 15;
 const scrolling_coeficient = 1000 ;
 const number_total_images = images.length;
 const scrolling_height = scrolling_coeficient * number_total_images;
@@ -162,126 +135,131 @@ const gallery_element = document.querySelector('.gallery');
 const scrolling_element = gallery_element.querySelector('.scroll_item ')
 
 // Set scroll item height for scrolling
-scrolling_element.style.height = scrolling_height + 'px'
+scrolling_element.style.height = scrolling_height + 'px';
+
+var last_image_title = "";
 
 images.map(function(image, index) {
 
-    let image_path = image.path + image.name;
-    let image_class = 'image' + index;
-    let image_text = image.text;
-    let image_title = image.title;
+    let image_path = "./assets/images/gallery/videos/" + image.name + ".png";
+    let title_image_src = image.title_path + image.title + ".svg"
+    let url = image.url || "#"
 
-    let new_title = document.createElement('img');
-    new_title.setAttribute('src', image_title);
-    new_title.classList.add('image_title');
-    let new_text = document.createElement('p');
-    new_text.innerHTML = image_text;
-    new_text.classList.add('image_text')
-    let new_image = document.createElement('img');
-    new_image.setAttribute('src', image_path);
-    new_image.setAttribute('alt', 'image number ' + index);
-    new_image.classList.add("image", image_class);
-    let image_container = document.createElement('div');
-    image_container.classList.add('image_container')
-    image_container.append(new_image);
-    image_container.append(new_title);
-    image_container.append(new_text);
+    let image_container_DOM =
+        "<div class='image_container'>" +
+            "<div class='title_image'>" +
+                "<img src='" + title_image_src + "' alt='" + image.title + "' class='image_title' data-url='" + url + "'/>" +
+            "</div>" +
+            "<a href='" + image.url + "' target='_parent'><img src='" + image_path + "' alt='" + image.name + "' class='main_image' /></a>" +
+            "<p class='image_text'>" + image.text + "</p>" +
+        "</div>";
 
-
-    if (index < images_to_display) new_image.classList.add('visible');
-    if (index == 0) image_container.classList.add('text_visible');
-
-    gallery_element.append(image_container);
-    image_elements_array.push(new_image);
+    gallery_element.innerHTML += image_container_DOM;
 
 }, false);
 
+// Initializing images array, after gallery element has been loaded with all the images
+image_elements_array = [...gallery_element.querySelectorAll('.image_container')];
+
+// Positioning image container relative to bottom
+const window_height = window.innerHeight;
+const percent_height = window_height / 100;
+const image_alignment_bottom = scrolling_height -(window_height - (5 * percent_height));
+
+image_elements_array.map(function(element, index) {
+    element.style.bottom = image_alignment_bottom + "px";
+});
+
 // function to position visible elements
-var position_elements = function(elements_array) {
-    elements_array.map(function(element, index) {
+var position_elements = function(counter) {
 
-        let move_coeficient = positioning_coeficient * index
-        let move_x = move_coeficient * 4;
-        let move_y = move_coeficient * -1.75;
-        let move_z = move_coeficient * -1;
+    // variables
+    let last_image_title = "";
 
-        gsap.to(element, {
-            x: move_x,
-            y: move_y,
-            z: move_z
-        });
+    image_elements_array.map(function(element, index) {
+
+        let move_coeficient = positioning_coeficient * index;
+        let counter_coeficient = positioning_coeficient * counter;
+        let x_coeficient = 3;
+        let y_coeficient = -19;
+        let z_coeficient = -1;
+        let move_x = move_coeficient * x_coeficient - counter_coeficient * x_coeficient;
+        let move_y = move_coeficient * y_coeficient - counter_coeficient * y_coeficient;
+        let move_z = move_coeficient * z_coeficient - counter_coeficient * z_coeficient;
+
+        if (counter >= 0) {
+            gsap.to(element, {
+                x: move_x,
+                y: move_y,
+                z: move_z
+            });
+        }
+
+        // hide / show first element
+        if (index < counter)  {
+            element.classList.add('hidden');
+            element.classList.remove('show');
+        }  else {
+            element.classList.add('show');
+            element.classList.remove('hidden');
+        }
+
+        // hide / show repeated title image
+        let image_title_element = element.querySelector('.title_image img');
+        let image_title = image_title_element.getAttribute('alt');
+        if (image_title == last_image_title) image_title_element.classList.add('hide');
+
+        // When element first in view -> show
+        let element_index = image_elements_array.indexOf(element);
+        if (element_index == counter) image_title_element.classList.remove('hide');
+
+        // Storing last image title for later comparison
+        last_image_title = image_title;
     });
 }
 
 // initial positioning
-position_elements(image_elements_array);
+position_elements(0);
 
-// Get elements for image scrolling
-const get_elements = function() {
-    let first_in_visible = gallery_element.querySelectorAll('.visible')[0];
-    let last_in_visible = gallery_element.querySelectorAll('.visible')[5]
-    let last_in_visible_index = image_elements_array.indexOf(last_in_visible);
-    let item_one_plus = (last_in_visible_index < image_elements_array.length) ? image_elements_array[last_in_visible_index + 1] : image_elements_array[image_elements_array.length - 1];
-    let first_in_visible_index = image_elements_array.indexOf(first_in_visible);
-    let item_one_minus = (first_in_visible_index > 0) ? image_elements_array[first_in_visible_index - 1] : image_elements_array[0];
 
-    let elements = {
-        first: first_in_visible,
-        one_plus: item_one_plus,
-        last: last_in_visible,
-        one_minus: item_one_minus
+//
+// SCROLLING
+//
+
+// 1) Variables
+let scroll_counter = 0;
+var ticker = 0;
+var last_ticker = 0;
+var visibles_array = [];
+
+// 2) Function
+$('.gallery').mousewheel(function(event, delta) {
+
+    if (delta < 0) scroll_counter++;
+    else scroll_counter--;
+
+    if ((scroll_counter % 15 == 0) && (delta < 0) && (ticker < image_elements_array.length - 1)) ticker++;
+    else if ((scroll_counter % 15 == 0) && (delta > 0) && (ticker >= 0)) ticker--;
+
+    console.log(ticker);
+    if(last_ticker != ticker && ((ticker >= 0) || (ticker <= gallery_element_array))) {
+            position_elements(ticker);
     }
 
-    return elements;
-}
-
-
-//
-//
-//
-// https://codepen.io/Sahil89/pen/zMvxmb
-//
-//
-//
-
-var controller = new ScrollMagic.Controller();
-
-$('img.image').each(function() {
-
-})
-
-var timelineHeight = $('.timeline').height();
-
-$('.timeline .timeline__item').each(function() {
-
-    var timelineItemScene = new ScrollMagic.Scene({
-        triggerHook: .5,
-        triggerElement: this,
-        duration: 200
-    })
-    .setClassToggle(this, 'timeline__item--active')
-    .addIndicators()
-    .addTo(scrollMagicController);
-
+    last_ticker = ticker
 });
 
-var gradientController = new ScrollMagic.Controller({globalSceneOptions: {duration: timelineHeight}});
-
-var fadeGradientScene = new ScrollMagic
-    .Scene({
-        triggerHook: .5,
-        triggerElement: '.timeline__item',
-    })
-    .setClassToggle('.gradient', 'gradient--active')
-    // .addIndicators({
-    //     'name': 'gradient'
-    // })
-    .addTo(gradientController);
-
-// END OF TESTING
 
 
+// move gallery on keypress arrow up/down
+document.addEventListener('keydown', function(event) {
+    if ( (event.code == "ArrowUp")  && (ticker < image_elements_array.length - 1) ) ticker++;
+    else if ( (event.code == "ArrowDown") && (ticker > 0) ) ticker--;
+    console.log(ticker);
 
+    if ( (last_ticker != ticker) && (ticker >= 0) ) {
+        position_elements(ticker);
+    }
 
-// identify first and 7+1 in row
-// a && a+7
+    last_ticker = ticker
+})
