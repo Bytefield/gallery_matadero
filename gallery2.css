@@ -49,7 +49,9 @@ body {
     transition: opacity 1s ease;
 }
 
-.gallery a {
+.image_container .main_image,
+.image_container iframe,
+#player {
     width:45%;
 }
 

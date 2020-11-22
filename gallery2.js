@@ -5,7 +5,15 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624459"
+    },
+    {
+        name: "ManuelEstrada",
+        text: "Manuel Estrada",
+        title: "comite_asesor",
+        title_path: "./assets/images/gallery/videos/titles/",
+        path: "./assets/images/gallery/videos/",
+        video_id: "482098195"
     },
     {
         name: "GiovanniVannucchi",
@@ -13,7 +21,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624861"
     },
     {
         name: "RuthKlotzel",
@@ -21,7 +29,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481625042"
     },
     {
         name: "GonzaloCastillo",
@@ -29,7 +37,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624865"
     },
     {
         name: "KarinaSalguero-Moya",
@@ -37,7 +45,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624922"
     },
     {
         name: "PeterMussfeldt",
@@ -45,7 +53,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481625126"
     },
     {
         name: "ManuelLecuona",
@@ -53,7 +61,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624926"
     },
     {
         name: "OscarSalinas",
@@ -61,7 +69,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481625051"
     },
     {
         name: "FranciscoProvidencia",
@@ -69,7 +77,7 @@ const images = [
         title: "comite_asesor",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624774"
     },
     {
         name: "FelipeCesarLondono",
@@ -77,7 +85,7 @@ const images = [
         title: "equipo_BID",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624429"
     },
     {
         name: "LulaCapriel",
@@ -85,7 +93,7 @@ const images = [
         title: "equipo_BID",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481625021"
     },
     {
         name: "OvidioMorales",
@@ -93,7 +101,7 @@ const images = [
         title: "equipo_BID",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481625121"
     },
     {
         name: "CarlosZuniga",
@@ -101,7 +109,7 @@ const images = [
         title: "equipo_BID",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624428"
     },
     {
         name: "AnabellaRondina",
@@ -109,7 +117,7 @@ const images = [
         title: "equipo_BID",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624366"
     },
     {
         name: "AlexLobos",
@@ -117,10 +125,9 @@ const images = [
         title: "jurado_bid18",
         title_path: "./assets/images/gallery/videos/titles/",
         path: "./assets/images/gallery/videos/",
-        url: ""
+        video_id: "481624326"
     }
 ];
-
 const images_path = "./assets/images/gallery/categorias/desktop/";
 var gallery_element_array = [];
 var image_elements_array = [];
@@ -150,13 +157,22 @@ images.map(function(image, index) {
             "<div class='title_image'>" +
                 "<img src='" + title_image_src + "' alt='" + image.title + "' class='image_title' data-url='" + url + "'/>" +
             "</div>" +
-            "<a href='" + image.url + "' target='_parent'><img src='" + image_path + "' alt='" + image.name + "' class='main_image' /></a>" +
+            "<img src='" + image_path + "' alt='" + image.name + "' class='main_image' />" +
+            "<iframe src='https://player.vimeo.com/video/" + image.video_id + "' class='hide' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>" +
             "<p class='image_text'>" + image.text + "</p>" +
         "</div>";
 
     gallery_element.innerHTML += image_container_DOM;
 
 }, false);
+
+const toggle_class = function(element, className) {
+    if (element.classList.contains(className)) {
+        element.classList.remove(className);
+    } else {
+        element.classList.add(className);
+    }
+}
 
 // Initializing images array, after gallery element has been loaded with all the images
 image_elements_array = [...gallery_element.querySelectorAll('.image_container')];
@@ -166,8 +182,19 @@ const window_height = window.innerHeight;
 const percent_height = window_height / 100;
 const image_alignment_bottom = scrolling_height -(window_height - (5 * percent_height));
 
+const flip_n_play = function (event) {
+    let target = event.target;
+    toggle_class(target, 'hide');
+    let target_iframe = target.parentElement.querySelector('iframe');
+    toggle_class(target_iframe, 'hide');
+    let player = new Vimeo.Player(target_iframe);
+    player.play();
+}
+
 image_elements_array.map(function(element, index) {
     element.style.bottom = image_alignment_bottom + "px";
+    element.querySelector('.main_image').addEventListener('click', flip_n_play);
+    element.querySelector('iframe').addEventListener('click', flip_n_play);
 });
 
 // function to position visible elements
@@ -180,8 +207,8 @@ var position_elements = function(counter) {
 
         let move_coeficient = positioning_coeficient * index;
         let counter_coeficient = positioning_coeficient * counter;
-        let x_coeficient = 3;
-        let y_coeficient = -19;
+        let x_coeficient = 6;
+        let y_coeficient = -10;
         let z_coeficient = -1;
         let move_x = move_coeficient * x_coeficient - counter_coeficient * x_coeficient;
         let move_y = move_coeficient * y_coeficient - counter_coeficient * y_coeficient;
@@ -213,6 +240,13 @@ var position_elements = function(counter) {
         let element_index = image_elements_array.indexOf(element);
         if (element_index == counter) image_title_element.classList.remove('hide');
 
+        let element_iframe = element.querySelector('iframe');
+        let element_image = element.querySelector('.main_image');
+        let element_video = new Vimeo.Player(element_iframe);
+        element_video.pause();
+        element_image.classList.remove('hide');
+        element_iframe.classList.add('hide');
+
         // Storing last image title for later comparison
         last_image_title = image_title;
     });
@@ -220,6 +254,9 @@ var position_elements = function(counter) {
 
 // initial positioning
 position_elements(0);
+
+// Switching image and video
+
 
 
 //
@@ -262,4 +299,15 @@ document.addEventListener('keydown', function(event) {
     }
 
     last_ticker = ticker
-})
+});
+
+$('document').ready(function() {
+    iframes_array = $('iframe');
+    image_reference = $('.main_image')[0];
+    image_ref_width = image_reference.width;
+    image_ref_height = image_reference.height;
+    iframes_array.each(function(index, element) {
+        element.width = image_ref_width;
+    })
+    console.log(image_ref_width);
+});
