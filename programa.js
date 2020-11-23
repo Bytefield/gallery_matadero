@@ -18,14 +18,20 @@ const fourth = right.querySelector('.right .image_container:first-of-type')
 const fifth = right.querySelector('.right .image_container:last-of-type')
 
 const position_elements = function () {
-    gsap.set(left, {
+    gsap.to(left, {
         x: 0,
         y: 10,
         z: -75,
         rotateY: 50
     })
 
-    gsap.set(first, {
+    gsap.to(left_top, {
+        x: 0,
+        y: 0,
+        position: "relative"
+    })
+
+    gsap.to(first, {
         x: 0,
         y: 63,
         z: 0,
@@ -130,7 +136,8 @@ var last_clicked;
 let close_button = document.querySelector('.close');
 
 images_array.map(function(element) {
-    element.addEventListener('click', function(event) {
+    let clicked_image = element.querySelector('img');
+    clicked_image.addEventListener('click', function(event) {
         let parent_element = event.target.parentElement;
         let is_active = parent_element.classList.contains('active');
         if (!is_active) {
@@ -182,6 +189,8 @@ images_array.map(function(element) {
 });
 
 close_button.addEventListener('click', function() {
+
+    console.log(last_clicked);
 
     let parent_contains = last_clicked.closest('left');
     var last_clicked_width;

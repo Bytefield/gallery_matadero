@@ -198,7 +198,7 @@ const images = [
         url: "https://bid-dimad.org/bid20/archivos/proyecto/aplicador-analgesico-para-recien-nacido"
     },
     {
-        name: "producto_kit",
+        name: "producto_KIT",
         text: "Mención //<br>KIT",
         title: "producto",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
@@ -382,7 +382,7 @@ const images = [
         url: "https://bid-dimad.org/bid20/archivos/proyecto/hospital-sant-joan-de-deu"
     },
     {
-        name: "participacion_CRIA",
+        name: "participacion_cria",
         text: "Premio //<br>CRIA, experiencias de invención",
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",
@@ -409,7 +409,7 @@ const images = [
         url: "https://bid-dimad.org/bid20/archivos/proyecto/a-cidade-com-as-pessoas-mais-felizes-do-mundo"
     },
     {
-        name: "participacion_diseñoactivacion",
+        name: "participacion_disenoactivacion",
         text: "Mención //<br>Diseño para la activación del territorio y el paisaje de la Huerta de Murcia",
         title: "participacionciudadana",
         title_path: "./assets/images/gallery/logos_categorias_SVG/",

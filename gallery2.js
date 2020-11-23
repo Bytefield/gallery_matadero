@@ -207,7 +207,7 @@ var position_elements = function(counter) {
 
         let move_coeficient = positioning_coeficient * index;
         let counter_coeficient = positioning_coeficient * counter;
-        let x_coeficient = 6;
+        let x_coeficient = 10;
         let y_coeficient = -10;
         let z_coeficient = -1;
         let move_x = move_coeficient * x_coeficient - counter_coeficient * x_coeficient;
